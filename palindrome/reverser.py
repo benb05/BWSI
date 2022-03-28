@@ -1,6 +1,6 @@
 
 
-def reverser(x):
+def palindromecheck(x):
     i = 0
     array = [0]*len(x)
 
@@ -10,8 +10,15 @@ def reverser(x):
         i+= 1
 
     reversedword = "".join(array)
+    if x == reversedword:
+        return True
+    else:
+        return False
+
+if palindromecheck(x) == False:
+    print("This word is not a palindrome")
+if palindromecheck(x) == True:
+    print("This word is a palindrome")
 
 
-
-reverser("hell")
-print(reversedword)
+    
