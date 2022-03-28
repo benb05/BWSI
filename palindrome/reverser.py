@@ -17,7 +17,7 @@ def palindromecheck(x):
 
 if palindromecheck(x) == False:
     print("This word is not a palindrome")
-if palindromecheck(x) == True:
+else:
     print("This word is a palindrome")
 
 
