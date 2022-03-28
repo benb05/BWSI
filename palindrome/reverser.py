@@ -1,4 +1,6 @@
 
+def remove(string):
+    return string.replace(" ", "")
 
 def palindromecheck(x):
     i = 0
@@ -10,10 +12,17 @@ def palindromecheck(x):
         i+= 1
 
     reversedword = "".join(array)
-    if x == reversedword:
+    reversedword1 = remove(reversedword)
+    reversedword2 = reversedword1.lower()
+    ogword = x.lower()
+    ogword1 = remove(ogword)
+    if reversedword2 == ogword1:
         return True
     else:
         return False
+
+x = "R a c e C a R"
+
 
 if palindromecheck(x) == False:
     print("This word is not a palindrome")
